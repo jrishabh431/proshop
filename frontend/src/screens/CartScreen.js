@@ -6,7 +6,6 @@ import Message from '../components/Message'
 import { addToCart, removeFromCart } from '../actions/cartActions'
 
 const CartScreen = ({ match, location, history }) => {
-    console.log(history)
   let productId, qty
   if (history.action === 'PUSH') {
     productId = match.params.id
